@@ -230,7 +230,7 @@ Perspective-n-Points, PnP(P3P)提供了一种解决方案，它是一种由3D-2D
 
 - 相对位姿误差用于计算相同两个时间戳上的位姿变化量的差， 同样， 在用时间戳对齐之后， 真实位姿和估计位姿均每隔一段相同时间计算位姿的变化量， 然后对该变化量做差， 以获得相对位姿误差， 该标准适合于估计系统的漂移。
 
-http://zhaoxuhui.top/blog/2021/05/14/APE-RPE-ATE-RTE-Mmetric-in-SLAM.html#2%E4%BD%8D%E5%A7%BF%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87
+参考链接：[APE和RPE原理](http://zhaoxuhui.top/blog/2021/05/14/APE-RPE-ATE-RTE-Mmetric-in-SLAM.html#2%E4%BD%8D%E5%A7%BF%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87)
 
 题目（8）：`旋转矩阵左乘和右乘的区别？`
 
@@ -241,7 +241,12 @@ http://zhaoxuhui.top/blog/2021/05/14/APE-RPE-ATE-RTE-Mmetric-in-SLAM.html#2%E4%B
 题目（9）：`vins-fusion图像特征点提取和跟踪用的是什么方法？`
 
 - 特征点提取采用的是Shi Tomasi算法的角点检测，调用的是opencv中封装好的cv::goodFeaturesToTrack函数。
+参考链接：
+[Harris算法原理](https://blog.csdn.net/qq_40374812/article/details/116758378)
+[Shi Tomasi算法原理](https://blog.csdn.net/qq_40374812/article/details/117016214?ops_request_misc=&request_id=&biz_id=102&utm_term=Shi%20Tomasi&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-117016214.nonecase&spm=1018.2226.3001.4187)
 - 特征点跟踪采用的是LK光流法，调用的是opencv中封装好的cv::calcOpticalFlowPyrLK函数。
+参考链接：
+[LK光流法原理](https://zhuanlan.zhihu.com/p/105998058) [LK光流法实现](https://zhuanlan.zhihu.com/p/435949335)
 
 题目（10）：`vins-fusion中对图像特征是如何存储的？`
 
