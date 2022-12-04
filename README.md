@@ -252,7 +252,7 @@ http://zhaoxuhui.top/blog/2021/05/14/APE-RPE-ATE-RTE-Mmetric-in-SLAM.html#2%E4%B
 - 由于是双目相机，所以加上camera_id组成pair进行区分
 - 将该pair和特征点的id组成featureFrame(map)（一张图像中的特征点有多个，用feature_id区分），map包含了同一时刻所有相机的特征点和对应关系
 - 根据不同时刻，将time和featureFrame组成pair存入featureBuf队列，用于后续求解位姿等。
-- 
+
 
 **********************************************************
 `路径规划板块`
